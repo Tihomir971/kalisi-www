@@ -8,6 +8,11 @@
 
 <div>
 	<img src="kalisi-logo.svg" alt="Kalisi logo" class="size-80" />
+	<a
+		href="https://savsoftver.rs/"
+		class="block mx-auto px-4 py-2 w-fit rounded bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+		>Sav softver i usluge</a
+	>
 	<!-- 	<div
 		class="flex content-center w-full text-ink-2 shadow-6 p-1 bg-surface-3 border rounded border-surface-3 m-2"
 	>
