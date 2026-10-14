@@ -5,14 +5,14 @@
 	"scripts": {
 		"dev": "vite dev",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"update-deps": "pnpx npm-check-updates -i --format group --install always",
-		"update-next": "pnpx npm-check-updates -i --format group --install always --target \"@next\"",
+		"update-deps": "bunx npm-check-updates -i --format group --install always",
+		"update-next": "bunx npm-check-updates -i --format group --install always --target \"@next\"",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"build": "vite build",
-		"preview": "pnpm run build && wrangler pages dev .svelte-kit/cloudflare",
+		"preview": "bun run build && wrangler pages dev .svelte-kit/cloudflare",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"deploy": "pnpm run build && wrangler pages deploy .svelte-kit/cloudflare",
+		"deploy": "bun run build && wrangler pages deploy .svelte-kit/cloudflare",
 		"build-cf-types": "wrangler types && move worker-configuration.d.ts src/"
 	},
 	"devDependencies": {
